@@ -1,0 +1,30 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mainH1">Generate a </br> <span class="mainSpan">random password</span></h1>
+            <p class="mainP">Never use an insecure password again.</p>
+            <div class="formButton">
+                <form onsubmit="onSubmit(event)" class="forms">
+                    <input type="number" name="name" placeholder="length" class="lengthInput">
+                    <input  type="submit" value="Generate passwords" class="generateB"></input>
+                </form>
+            </div>
+            <hr>
+            <div class="paragraph">
+                <p class="rectangle" id="rectangle1" onclick="copyText()"></p>
+                <p class="rectangle" id="rectangle2"></p>
+            </div>
+            <div class="reset" onclick="reset()">Reset</div>
+        </div>   
+        <script src="index.js"></script>
+    </body>
+</html>
